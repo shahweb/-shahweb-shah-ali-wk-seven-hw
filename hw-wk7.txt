@@ -1,0 +1,56 @@
+Part 2:
+
+1. It was first introduced by Apple for use in their Mac OS X
+WebKit component in the year 2004.
+
+2. Canvas 2D provide a way to draw graphics with Javascript. 2D stands for two-dimensional.
+
+3. The canvas element is defined by “<canvas></canvas>”,
+which is added to the index.html file
+
+4. The other elements are width and height
+
+5. The default canvas size is 300w and 150h
+
+6. Nothing will render.
+
+7. The canvas would render 300w and 150h
+
+8. A context would need to be created in order to gain access to the actual drawing interface. A context is an object whose methods provide the drawing interface.
+
+9. 
+- 2d for 2 dimensional graphics
+- webgl for 3 dimensional graphics 
+
+10. We can access our drawing context using the HTL5 built-in method .getContext() const ctx = canvas.getContext("2d");
+
+11. The two primitive shapes supported are Rectangles and paths
+
+12. Other shapes are created by combining shapes. Built in canvas-path functions help create complex shapes
+
+13. 
+- fillRect() - fillRect(x, y, width, height)
+  x- the x-axis coordinate of the upper left corner of rectangle
+  y- the y-axis of the upper left corner of rectangle
+  width: rectangle's width. positive values on the right. negative values on the left
+  height: rectangle's height. positive values are down. negative values are down
+
+- strokeRect() - ctx.strokeRect(x, y,width,height)
+  x- the x-axis coordinate rectangle start point. 
+  y- the y-axis  coordinate rectangle start point. 
+  width: rectangle's width. positive values on the right. negative values on the left
+  height: rectangle's height. positive values are down. negative values are up
+
+- clearRect() - ctx.clearRect(x, y,width,height)
+  x- the x-axis coordinate rectangle start point. 
+  y- the y-axis  coordinate rectangle start point. 
+  width: rectangle's width. positive values on the right. negative values on the left
+  height: rectangle's height. positive values are down. negative values are up
+
+14. a list of points connected by segments of lines that can be various shapes. They can be curved with different widths and colors. 
+
+15. 
+- draw a path.
+- Use drawing commands to draw into the path.
+- once a path has been created, use stroke ( ) or fill ( ) to
+the path to render the drawing
